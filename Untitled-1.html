@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohis ARBI SMK Negeri 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f5f0;
+        }
+        
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            direction: rtl;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, #0d4e6b 0%, #1a7e8a 100%);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('rohabi.jpg') center/cover;
+            min-height: 80vh;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pengurus-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .ekstrakurikuler-item:hover {
+            background-color: #f0f7f8;
+        }
+        
+        .section-title {
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #0d4e6b, #1a7e8a);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="rohis.jpg" alt="Logo Majelis Remaja Islam dengan kaligrafi arab berwarna emas di atas background hijau" class="h-12 w-12 rounded-full">
+                    <div>
+                        <h1 class="text-xl font-bold">ROHIS ARBI</h1>
+                        <p class="text-xs">SMK Negeri 2 Depok</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-yellow-200">Beranda</a>
+                    <a href="#pengurus" class="hover:text-yellow-200">Pembina dan ketua</a>
+                    <a href="#kegiatan" class="hover:text-yellow-200">Kegiatan Rohis</a>
+                    <a href="#ekstrakurikuler" class="hover:text-yellow-200">Kajian kami</a>
+                   
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <p class="arabic-text text-3xl mb-4">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Rohis Binaul Ilmi</h1>
+            <p class="text-xl md:text-2xl mb-8">Kuatkan ukhuwah Syiarkan Dakwah AllahuAkbar</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#kegiatan" class="bg-white text-blue-800 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Kegiatan </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdldyXq11geIJ_KpaZXL290Hh4bRE4BIEIL0PMxUVWB0Hq1ug/viewform " class="border border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-800 transition duration-300">Pendaftaran</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi Misi Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="section-title text-3xl font-bold text-center md:text-left mb-12 text-gray-800">Visi Misi Kami</h2>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4 text-blue-800">Visi</h3>
+                        <p class="text-gray-700">"Menjadikan Rohani Islam sebagai wadah berkreativitas,memupuk ukhuwah islamiyah dan selalu aktif dalam bidang yang positif berlandaskan iman, takwa kepada Allah SWT dan mewujudkan taruna/i menjadi generasi muda yang berakhlakul karimah dan berlandaskan Al-Quran dan Hadist"</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-800">Misi</h3>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Meningkatkan keimanan dan ketaqwaann kepada Allah SWT dengan mewujudkan berbagai kegiataan keagamaaan</li>
+                            <li>Meningkatkan pengetahuan tentang akhlak,Al-Quran dan Hadist</li>
+                            <li>Mempererat jalinan silaturahmi antar anggota organisasi</li>
+                            <li>Menciptakan anggota Rohani Islam yang cinta identitas serta menjaga nama bak organisasi dan sekolah</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="ROHIS ARBI.png" alt="Kelompok remaja muslim sedang belajar bersama di masjid dengan Al-Quran terbuka" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Pengurus -->
+    <section id="pengurus" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold text-center mb-12 text-gray-800">Struktur Pengurus Periode 2024/2025</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Pembina -->
+                <div class="pengurus-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 transform hover:shadow-xl">
+                    <img src="oji.jpg" alt="Foto Guru Pembina Majelis Remaja Islam dengan busana muslim formal dan senyum ramah" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Fakhurozi SHI</h3>
+                        <p class="text-gray-600 font-semibold">Pembina Rohis Putra</p>
+                        <p class="text-gray-500 mt-2">Guru Pendidikan Agama Islam SMA Negeri 2 Depok</p>
+                    </div>
+                </div>
+
+                <!-- Pembina -->
+                <div class="pengurus-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 transform hover:shadow-xl">
+                    <img src="rini.jpg" alt="Foto Guru Pembina Majelis Remaja Islam dengan busana muslim formal dan senyum ramah" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Rini Nurbandiah S.Pd</h3>
+                        <p class="text-gray-600 font-semibold">Pembina Rohis Putri</p>
+                        <p class="text-gray-500 mt-2">Guru Kejuruan SMK Negeri 2</p>
+                    </div>
+                </div>
+                
+                <!-- Ketua -->
+                <div class="pengurus-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 transform hover:shadow-xl">
+                    <img src="fahri.jpg" alt="Foto Ketua Majelis Remaja Islam siswa berpakaian putih-putih dengan peci" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Achmad Fahri Pratama</h3>
+                        <p class="text-gray-600 font-semibold">Ketua Rohis Putra</p>
+                        <p class="text-gray-500 mt-2">Periode 2024/2025 Angkatan 20</p>
+                    </div>
+                </div>
+                
+                <!-- Wakil Ketua -->
+                <div class="pengurus-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 transform hover:shadow-xl">
+                    <img src="kanza.jpg" alt="Foto Wakil Ketua Majelis Remaja Islam siswi berjilbab dengan senyum hangat" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Kanza Agustina Azra</h3>
+                        <p class="text-gray-600 font-semibold">Ketua  Rohis Putri</p>
+                        <p class="text-gray-500 mt-2">Periode 2024/2025 Angkatan 20</p>
+                    </div>
+                </div>
+            </div>
+
+
+             
+            
+            <!-- Divisi-divisi -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-700 mb-4">
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800"> Divisi HUMED</h3>
+                    <p class="text-gray-600 mb-2">Ketua : Khansa Ghaisani Minhalina</p>
+                    <p class="text-gray-500 text-sm">Membuat dokumentasi dalam bentuk foto/video</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-700 mb-4">
+                        
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">Divisi PSDM</h3>
+                    <p class="text-gray-600 mb-2">Ketua : Abimanyu Eka Prasetyo</p>
+                    <p class="text-gray-500 text-sm">Merencanakan,Melaksanakan pengembangan kompetensi dan Keterampilan individu dalam suatu organisasi.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-700 mb-4">
+                        
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">Divisi Danus</h3>
+                    <p class="text-gray-600 mb-2">Ketua : Abib Rizky Firmansyah</p>
+                    <p class="text-gray-500 text-sm">Mencari dan mengelola dana untuk kegiatan organisasi.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-700 mb-4">
+                       
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">Divisi DKM</h3>
+                    <p class="text-gray-600 mb-2">Ketua : Dhimas Andrealova</p>
+                    <p class="text-gray-500 text-sm">Bertanggung jawab atas pengelolaan dan Kemakmuran masjid.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-700 mb-4">
+                       
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">Divisi SYIAR</h3>
+                    <p class="text-gray-600 mb-2">Ketua : M Faiz Akbar</p>
+                    <p class="text-gray-500 text-sm">Menyebarkan nilai-nilai agama islam ke lingkungan sekolah.</p>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Kegiatan dan Event -->
+    <section id="kegiatan" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold text-center mb-12 text-gray-800">Kegiatan Rohis</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kegiatan 1 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 transform">
+                    <img src="rohabi 1.jpg" alt="Remaja muslim sedang mengikuti kajian di masjid dengan Al-Quran terbuka" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-2">Rohabi</span>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Membagikan makanan untuk berbuka</h3>
+                        <p class="text-gray-600 mb-4">Rohis langsung turun ke jalan dan membagikan makanan untuk berbuka</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="far fa-calendar mr-2"></i>
+                            <span>Setiap Bulan Ramadhan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kegiatan 2 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 transform">
+                    <img src="riyadohjpg.jpg" alt="Kelompok remaja sedang mengadakan kegiatan bakti sosial di lingkungan sekitar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-2">Riyadhoh</span>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Olahraga dan latihan fisik</h3>
+                        <p class="text-gray-600 mb-4">Untuk memperkuat fisik dan sehat jasmani</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kegiatan 3 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 transform">
+                    <img src="RAKER.jpg" alt="Peserta sedang tampil dalam lomba adzan dengan pengeras suara" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-2">Raker Rohis</span>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Rapat kerja dan membuat program kerja di setiap divisi</h3>
+                        <p class="text-gray-600 mb-4">Berdiskusi dan mempresentasikan hasil program yang dibuat pada setiap divisi</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kegiatan 4 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 transform">
+                    <img src="HADROH.jpg" alt="Sekelompok remaja melakukan kegiatan outbound di alam terbuka dengan berbagai permainan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold mb-2">Hadroh</span>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">tim hadroh ARBI</h3>
+                        <p class="text-gray-600 mb-4">Mengiringi jalannya sholawat dan dzikir</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kegiatan 5 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 transform">
+                    <img src="DKM.jpg" alt="Suasana diskusi kelompok di ruangan dengan whiteboard penuh tulisan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-semibold mb-2">Bersih-bersih masjid</span>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Rutinan membersihkan masjid</h3>
+                        <p class="text-gray-600 mb-4">Seluruh anggota Rohis membersihkan seluruh masjid</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kegiatan 6 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 transform">
+                    <img src="phbi.jpg" alt="Suasana pelatihan da'i muda dengan peserta sedang berdiskusi serius" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-semibold mb-2">PHBI</span>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Peringatan Hari Besar Islam</h3>
+                        <p class="text-gray-600 mb-4">Rohis mengatur jalannya acara PHBI</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ekstrakurikuler Section -->
+    <section id="ekstrakurikuler" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold text-center mb-12 text-gray-800">Kajian Kami</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Ekstrakurikuler 1 -->
+                <div class="ekstrakurikuler-item bg-white rounded-lg shadow-md p-6 flex items-start transition duration-300 cursor-pointer">
+                    <div class="mr-6 bg-blue-100 p-4 rounded-lg">
+                        
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800">Tahfidz Al-Qur'an</h3>
+                        <p class="text-gray-600 mb-3">Program menghafal Al-Qur'an dengan metode yang mudah dipahami dan menyenangkan.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ekstrakurikuler 2 -->
+                <div class="ekstrakurikuler-item bg-white rounded-lg shadow-md p-6 flex items-start transition duration-300 cursor-pointer">
+                    <div class="mr-6 bg-green-100 p-4 rounded-lg">
+                       
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800">Public Speaking Islami</h3>
+                        <p class="text-gray-600 mb-3">Melatih kemampuan berbicara di depan umum dengan konten keislaman.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ekstrakurikuler 3 -->
+                <div class="ekstrakurikuler-item bg-white rounded-lg shadow-md p-6 flex items-start transition duration-300 cursor-pointer">
+                    <div class="mr-6 bg-yellow-100 p-4 rounded-lg">
+                        
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800">Pembiasaan bahasa arab</h3>
+                        <p class="text-gray-600 mb-3">menggunakan bahasa arab dalam kegiatan sehari hari.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ekstrakurikuler 4 -->
+                <div class="ekstrakurikuler-item bg-white rounded-lg shadow-md p-6 flex items-start transition duration-300 cursor-pointer">
+                    <div class="mr-6 bg-purple-100 p-4 rounded-lg">
+                       
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800">Hadroh</h3>
+                        <p class="text-gray-600 mb-3">Mengembangkan bakat  dalam grup vokal dan perkusi.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ekstrakurikuler 5 -->
+                <div class="ekstrakurikuler-item bg-white rounded-lg shadow-md p-6 flex items-start transition duration-300 cursor-pointer">
+                    <div class="mr-6 bg-red-100 p-4 rounded-lg">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800">Media Islam Digital</h3>
+                        <p class="text-gray-600 mb-3">Membuat konten dakwah kreatif untuk platform digital.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ekstrakurikuler 6 -->
+                <div class="ekstrakurikuler-item bg-white rounded-lg shadow-md p-6 flex items-start transition duration-300 cursor-pointer">
+                    <div class="mr-6 bg-indigo-100 p-4 rounded-lg">
+                        
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800">Kepemimpinan Islam</h3>
+                        <p class="text-gray-600 mb-3">Pelatihan leadership berdasarkan teladan Rasulullah.</p>
+                        
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold text-center mb-12">Kata Mereka Tentang Kami</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                       
+                    </div>
+                    <p class="italic">"Rohis ARBI memberikan kontribusi besar dalam pembinaan karakter siswa. Perubahan positif dalam sikap dan ibadah sangat terlihat."</p>
+                    
+                </div>
+                
+                <!-- Testimoni 2 -->
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                       
+                           
+                        
+                    </div>
+                    <p class="italic">"Dalam ekskul Rohis lebih dalam mengerjakan semangat shalat dan membaca Al-Qur'an dan Kegiatannya kreatif namun tetap dalam koridor agama."</p>
+                    
+                </div>
+                
+                <!-- Testimoni 3 -->
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        
+                    </div>
+                    <p class="italic">"Di Rohis ARBI diajarkan tentang ukhuwah dan istiqamah. Skill public speaking"</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Rohis Binaul ilmi</h3>
+                    <p class="text-gray-400">pembinaan remaja muslim untuk membentuk generasi qur'ani yang berakhlak mulia dan berkontribusi untuk umat.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Beranda</a></li>
+                        <li><a href="#pengurus" class="text-gray-400 hover:text-white transition duration-300">Pembina dan Ketua</a></li>
+                        <li><a href="#kegiatan" class="text-gray-400 hover:text-white transition duration-300">Kegiatan Rohis</a></li>
+                        <li><a href="#ekstrakurikuler" class="text-gray-400 hover:text-white transition duration-300">Ekstrakurikuler</a></li>
+                      
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Ekstrakurikuler</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Tahfidz Al-Qur'an</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Public Speaking Islami</a></li>
+                        <li><a href="#" cla
